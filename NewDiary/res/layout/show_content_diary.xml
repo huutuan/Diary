@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        android:id="@+id/date_and_time_show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="70dip"
+        android:background="@drawable/background_item_top"
+        android:orientation="horizontal"
+        android:paddingTop="2dip" >
+
+        <ImageView
+            android:id="@+id/imv_smile_show"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="8dip"
+            android:src="@drawable/icon_smile" />
+
+        <TextView
+            android:id="@+id/txt_number_day_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="15"
+            android:textColor="#E24141"
+            android:textSize="30dip" />
+
+        <LinearLayout
+            android:id="@+id/txt_date_show"
+            android:layout_width="220dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_day_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="13dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_month_year_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jun 2014"
+                android:textColor="#8E8A8A"
+                android:textSize="12dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_time_show"
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:lines="2"
+            android:text="05:35 pm"
+            android:textColor="#8E8A8A"
+            android:textSize="12dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_and_time_show"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/background_item_bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/show_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center_horizontal"
+            android:textColor="#705A5A"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/show_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:gravity="fill"
+            android:textColor="#656060"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context="com.example.newdiary.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/date_and_time_new_diary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="70dip"
+        android:background="@drawable/background_item_top"
+        android:orientation="horizontal"
+        android:paddingTop="2dip" >
+
+        <ImageView
+            android:id="@+id/imv_smile_new_diary"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/icon_smile" />
+
+        <TextView
+            android:id="@+id/txt_number_day_new_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="15"
+            android:textColor="#E24141"
+            android:textSize="30dip" />
+
+        <LinearLayout
+            android:id="@+id/txt_date_new_diary"
+            android:layout_width="225dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="3dip"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_day_new_diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="13dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_month_year_new_diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jun 2014"
+                android:textColor="#8E8A8A"
+                android:textSize="12dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_time_new_diary"
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:lines="2"
+            android:text="05:35 pm"
+            android:textColor="#8E8A8A"
+            android:textSize="12dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_new_note"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_and_time_new_diary"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/background_item_bottom"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/diary_title"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/input_normal"
+            android:hint="Enter title here"
+            android:maxLines="1"
+            android:textColor="#631B1B"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/diary_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/input_normal"
+            android:gravity="left"
+            android:hint="Type here"
+            android:lines="8"
+            android:textColor="#656060"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/add_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/picture_add_selector"
+            android:onClick="addPicture" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/save_selector"
+            android:onClick="save" />
+    </LinearLayout>
+
+</RelativeLayout>
